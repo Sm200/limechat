@@ -5,3 +5,5 @@ USER root
 RUN pip install rasa_core
 RUN pip install rasa_nlu
 RUN pip install sklearn-crfsuite
+
+USER root
