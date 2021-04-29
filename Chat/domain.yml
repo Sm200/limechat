@@ -8,8 +8,44 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - reserve_table
+  - reserve_table_persons
+  - seats
+  - ac
+  - non_ac
+  - booking_time
+  - faq_timing
+  - faq_isOpen
+  - faq_cancel
+  - faq_special
 
 responses:
+  utter_askSeats:
+  - text: "How many seats would you like to reserve"
+
+  utter_sectionType:
+  - text: "Which section would you like to book"
+  - buttons:
+      - title: "AC"
+        payload: '/ac'
+      - title: "Non-AC"
+        payload: '/non_ac'
+
+  utter_bookingTime:
+    - text: "When would you like to book a reservation? (We are only open from 7pm to 10pm)"
+  
+  utter_faqTimings:
+    - text: "The restaurant opens at 7pm and closes at 10pm."
+
+  utter_faqDays:
+    - text: "The restaurant is open each and every day."
+
+  utter_faqCancel:
+    - text: "To cancel a reservation, simply call us at +91 9876543210 and cancel your reservation"
+
+  utter_faqSpecials:
+    - text: "Our chef is a master of the Italian cuisine. Our core speciality is our pasta, which is renowned throughout the city."
+
   utter_greet:
   - text: "Hey! How are you?"
 

@@ -49,6 +49,27 @@ nlu:
 - intent: faq_isOpen
   examples: |
     - What days are you open?
+    - What days you serve?
+    - are you serving today?
+    - are you open today?
+    
+
+- intent: faq_cancel
+  examples: |
+    - How do I cancel a reservation?
+    - procedure for cancellation
+    - I want to cancel my reservation
+    - cancellation
+    - cancel my reservation
+    - cancel reservation
+    
+- intent: faq_special
+  examples: |
+    - What are the specials?
+    - What this place famous for?
+    - what is the speciality?
+    - Special cousins
+
 
 - intent: greet
   examples: |

@@ -2,6 +2,24 @@ version: "2.0"
 
 stories:
 
+- story: faq
+  steps:
+  - intent: faq_timing
+  - action: utter_faqTimings
+  - intent: faq_isOpen
+  - action: utter_faqDays
+  - intent: faq_cancel
+  - action: utter_faqCancel
+  - intent: faq_special
+  - action: utter_faqSpecials
+
+
+
+
+
+
+
+
 - story: happy path
   steps:
   - intent: greet
