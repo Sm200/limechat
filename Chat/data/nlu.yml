@@ -1,6 +1,55 @@
 version: "2.0"
 
 nlu:
+
+- intent: reserve_table
+  examples: |
+    - I want to reserve a table
+    - I want a table
+    - can I get a table
+    - I want a reservation
+
+- intent: reserve_table_persons
+  examples: |
+    - I want to reserve a table for a party of 4
+    - I want a table for 4
+    - Give us a table for 4 person
+    - reserve a table for 4 
+
+- intent: seats
+  examples: |  
+    - 4
+    - 4 seats
+    - 4 persons
+    - we are 4
+
+- intent: ac
+  examples: |
+    - AC
+    - air conditioned
+    - chilled
+
+- intent: non_ac
+  examples: |
+    - Non-Ac
+
+- intent: booking_time
+  examples: |
+    - In haf an hour
+    - 7:30
+    - 7:30 pm
+    - within a hour
+
+- intent: faq_timing
+  examples: |
+    - What are your timings?
+    - When can I order?
+    - when are you available?
+
+- intent: faq_isOpen
+  examples: |
+    - What days are you open?
+
 - intent: greet
   examples: |
     - hey
